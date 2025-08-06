@@ -1,4 +1,4 @@
-The name of the GenAI project is StudyBuddyAI. It is an intelligent educational assitant that helps students study and understand concepts better using real- time explanations. sit is a poweerful combination of LLMs(Large Language Model) and RAG(Retrieval-Augemented Generation) to answer questions hailing from the wide range of acedemics.
+The name of the GenAI project is StudyBuddyAI. It is an intelligent educational assitant that helps students study and understand concepts better using real- time explanations. sit is a powerful combination of LLMs(Large Language Model) and RAG(Retrieval-Augemented Generation) to answer questions hailing from the wide range of acedemics.
 
 Features:
 
