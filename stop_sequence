@@ -1,0 +1,63 @@
+**Concept**
+
+A stop sequence is a special instruction that tells the AI where to stop generating text.
+It acts like a "brake" — once the model outputs the stop sequence, it ends the response.
+
+This is useful when we want controlled outputs, like short answers, structured JSON, or when avoiding extra text after an answer.
+
+Why Stop Sequences Help Study Buddy AI
+
+Ensures clean and controlled answers
+Helps when teaching coding or JSON (avoids extra commentary)
+Makes the bot feel more professional and exam-friendly
+Useful in chatbots to avoid unintended role-switching
+
+Example 1 – Quiz Answer
+
+Prompt:
+
+Question: Who is the President of the United States in 2025? 
+Answer:
+
+
+Stop sequence: "\n"
+
+AI Response:
+
+Joe Biden
+
+ The AI stops immediately after the name, instead of adding extra context like “He was elected in …”.
+
+ **Example 2 – JSON Output**
+
+Prompt:
+
+Give the following answer in JSON format:
+{ "country": "India", "capital": "New Delhi" }
+
+
+Stop sequence: "}"
+
+AI Response:
+
+{ "country": "India", "capital": "New Delhi" }
+
+
+The AI stops right after the closing curly brace, preventing it from adding extra text like “Here is the JSON you requested.”
+
+**Example 3 – Dialogue Control**
+
+Prompt:
+
+User: Tell me a joke
+AI:
+
+
+Stop sequence: "User:"
+
+AI Response:
+
+Why don’t skeletons fight? Because they don’t have the guts!
+
+
+ The AI stops before it starts hallucinating another user turn.
