@@ -1,0 +1,46 @@
+**Concept**
+
+LLMs don’t read text like humans do — they break text into tokens, which are small units such as words, sub-words, or characters.
+
+Example: "unbelievable" → "un" + "believe" + "able" (3 tokens).
+
+Each token is mapped to a number (an ID), and the AI processes these IDs to generate answers.
+
+Tokenization = converting text into tokens before feeding it to the model.
+
+**Why Tokens Matter for StudyBuddy AI**
+
+ Efficiency – Knowing token length helps prevent going over model limits (important for long study answers).
+
+ Cost control – More tokens = more processing cost. StudyBuddy can optimize.
+
+ Learning aid – Explains to students how machines read language, useful for AI literacy.
+
+**Example 1 – Simple Sentence**
+
+Prompt:
+
+Tokenize: "I love pizza"
+
+
+AI Response:
+
+"I" → [ID: 42]  
+"love" → [ID: 356]  
+"pizza" → [ID: 918]  
+Total tokens = 3
+
+**Example 2 – Longer Sentence**
+
+Prompt:
+
+How many tokens are in "Artificial Intelligence is amazing"?
+
+
+AI Response (Tokenization):
+
+"Artificial" → [ID: 2011]  
+"Intelligence" → [ID: 8902]  
+"is" → [ID: 75]  
+"amazing" → [ID: 563]  
+Total tokens = 4
