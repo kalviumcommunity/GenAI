@@ -1,0 +1,68 @@
+**Concept**
+
+Function Calling allows the AI to call external functions or APIs when needed.
+Instead of just generating text, the AI can return a structured JSON output that triggers a real action (e.g., fetch weather, solve a math problem, query a database).
+
+Why Function Calling Helps StudyBuddy AI
+
+ Interactivity – Students can directly ask for live calculations, definitions, or facts.
+
+ Dynamic Learning – AI connects to dictionaries, math solvers, or even external APIs.
+
+ Structured Output – Reliable JSON means results are consistent and can power features in apps.
+
+ Hands-on Practice – Students don’t just read; they can test concepts live.
+
+ **Example 1 – Calculator Function**
+
+Prompt:
+
+What is 25 * 16? Use the calculator function if needed.
+
+
+AI Response (with Function Call):
+
+{
+  "name": "calculator",
+  "arguments": {
+    "operation": "multiply",
+    "a": 25,
+    "b": 16
+  }
+}
+
+
+Function Output:
+
+{"result": 400}
+
+
+Final Answer (AI):
+
+25 × 16 = 400
+
+**Example 2 – Dictionary Lookup**
+
+Prompt:
+
+What does the word 'photosynthesis' mean? Use dictionary lookup.
+
+
+AI Response (with Function Call):
+
+{
+  "name": "dictionary_lookup",
+  "arguments": {
+    "word": "photosynthesis"
+  }
+}
+
+
+Function Output:
+
+{"definition": "The process by which green plants use sunlight to synthesize food from carbon dioxide and water."}
+
+
+Final Answer (AI):
+
+Photosynthesis is the process by which green plants use sunlight to make food from carbon dioxide.
